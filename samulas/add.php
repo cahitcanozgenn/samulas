@@ -22,11 +22,11 @@ if(isset($_POST["Submit"])) {
 	if(empty($identityNumber) || empty($firstName)) {
 				
 		if(empty($identityNumber)) {
-			echo "<font color='red'>NFC Kodu Boş Geçilemez!!!</font><br/>";
+			echo "<font color='red'>T.C. Kimlik Alanı Boş Geçilemez.!!!</font><br/>";
 		}
 		
 		if(empty($firstName)) {
-			echo "<font color='red'>Ürün Adı Boş Geçilemez!!!</font><br/>";
+			echo "<font color='red'>Ad Alanı Boş Geçilemez.!!!</font><br/>";
 		}
 		
 		
@@ -36,7 +36,7 @@ if(isset($_POST["Submit"])) {
 		$result = mysqli_query($mysqli, "INSERT INTO customer(identityNumber,firstName) VALUES('$identityNumber','$firstName')");
 		
 		//display success message
-		echo "<font  color='green'>Veri Ekleme İşlemi Başarılı";
+		echo "<font  color='green'>Müşteri Ekleme İşlemi Başarılı.";
 		echo "<br/><a class='btn btn-primary' href='index.php'>Geri Dön</a>";
 	}
 }

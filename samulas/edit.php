@@ -18,11 +18,11 @@ if(isset($_POST['update']))
 		}
 		
 		if(empty($identityNumber)) {
-			echo "<font color='red'>NFC Kodu Boş Geçilemez!!!</font><br/>";
+			echo "<font color='red'>T.C. Kimlik Boş Geçilemez!!!</font><br/>";
 		}
 		
 		if(empty($firtstName)) {
-			echo "<font color='red'>Ürün Adı Boş Geçilemez</font><br/>";
+			echo "<font color='red'>Ad Alanı Boş Geçilemez</font><br/>";
 		}		
 	} else {	
 		
@@ -69,11 +69,11 @@ while($res = mysqli_fetch_array($result))
 				<td><input class="form-control" type="text" name="id" value="<?php echo $id;?>"></td>
 			</tr>
 			<tr> 
-				<td>NFC KODU:</td>
+				<td>T.C. Kimlik No:</td>
 				<td><input class="form-control" type="text" name="identityNumber" value="<?php echo $identityNumber;?>"></td>
 			</tr>
 			<tr> 
-				<td>ÜRÜN ADI:</td>
+				<td>Müşteri Adı:</td>
 				<td><input class="form-control" type="text" name="firstName" value="<?php echo $firstName;?>"></td>
 			</tr>
 			<tr>
